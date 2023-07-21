@@ -1,0 +1,196 @@
+header {
+  min-height: 13vh;
+}
+
+body {
+  background-color: rgb(224, 188, 188);
+}
+
+main {
+  width: 100%;
+  min-height: 70vh;
+}
+
+header img {
+  height: 1.7rem;
+}
+
+.container-nav {
+  height: 3rem;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(196, 14, 114);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.container-nav:hover {
+  background-color: rgb(247, 1, 136);
+}
+
+.carousel-item {
+  height: 30vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 40vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(rgb(255, 0, 179), rgb(255, 0, 170));
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+h1:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+.border-check {
+  border: 0.5px solid black;
+}
+
+.boton-buscador-inicio {
+  border-color: rgb(196, 14, 114);
+  color: rgb(196, 14, 114);
+}
+
+.buscador-inicio {
+  border-color: rgb(196, 14, 114);
+}
+
+.parrafo-card {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.card-text {
+  min-height: 10vh;
+}
+
+.redes img {
+  margin-left: 0.5rem;
+}
+
+footer {
+  height: 4rem;
+}
+
+.text-contact {
+  width: 16rem;
+  height: 25vh;
+}
+
+input {
+  width: 16rem;
+}
+
+.card-details {
+  min-height: 60vh;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-body {
+  height: 200px;
+}
+
+.card-details-html {
+  text-align: center;
+}
+
+.card-details-html p {
+  margin: 0;
+  padding: 1.5px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.container-details {
+  min-height: 60vh;
+}
+
+.image-details {
+  width: 55vw;
+}
+
+table {
+  margin-bottom: 1rem;
+}
+
+table,
+th,
+td {
+  font-size: 14px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-h {
+    height: 40vh;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 20px;
+  }
+
+  .image-details {
+    width: 70%;
+    padding: 5px;
+  }
+
+  .card-details-html {
+    min-height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-details {
+    width: 50%;
+    height: 98%;
+    padding: 5px;
+  }
+
+  .card-details-js {
+    height: 50vh;
+  }
+
+  .card-h {
+    height: 40vh;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 20px;
+  }
+}
