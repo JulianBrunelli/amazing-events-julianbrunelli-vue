@@ -92,7 +92,7 @@
                 <p class="fw-medium d-flex align-items-center m-0">
                   Price: <span class="parrafo-card">$ {{event.price}}</span>
                 </p>
-                <!-- <a href="./pages/details.html?idEvent=${propertiesCards._id}" class="btn btn-primary">Details</a> -->
+                <a :href="'./details.html?idEvent='+ event._id" class="btn btn-primary">Details</a>
               </div>
             </section>
           </div>

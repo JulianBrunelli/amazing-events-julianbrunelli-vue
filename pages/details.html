@@ -12,41 +12,64 @@
 </head>
 
 <body>
-  <header class="d-flex justify-content-between align-items-center me-5">
-    <img class="ms-4 mt-1" src="../images/amazing_brand.png" alt="logo-amazing-events" />
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav gap-2">
-            <a class="nav-link container-nav" aria-current="page" href="../index.html">HOME</a>
-            <a class="nav-link container-nav text-wrap text-center" href="./upcomingevents.html">UPCOMING
-              <br />EVENTS</a>
-            <a class="nav-link container-nav text-wrap text-center" href="./pastevents.html">PAST <br />EVENTS</a>
-            <a class="nav-link container-nav" href="./contact.html">CONTACT</a>
-            <a class="nav-link container-nav" href="./stats.html">STATS</a>
+  <div id="app">
+    <header class="d-flex justify-content-between align-items-center me-5">
+      <img class="ms-4 mt-1" src="../images/amazing_brand.png" alt="logo-amazing-events" />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-2">
+              <a class="nav-link container-nav" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link container-nav text-wrap text-center" href="./upcomingevents.html">UPCOMING
+                <br />EVENTS</a>
+              <a class="nav-link container-nav text-wrap text-center" href="./pastevents.html">PAST <br />EVENTS</a>
+              <a class="nav-link container-nav" href="./contact.html">CONTACT</a>
+              <a class="nav-link container-nav" href="./stats.html">STATS</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <main>
+      <div id="cardsDetails" class="card-details-html d-flex flex-wrap justify-content-center mt-3">
+        <template v-if="eventDetails">
+          <div class="card card-details-js mb-3 mt-3 col-9 d-flex flex-column align-items-center flex-lg-row">
+            <img :src="eventDetails.image" class="card-img-top image-details" alt="" />
+            <section>
+              <h5 class="card-title text-center mt-1 text-decoration-underline">
+                {{eventDetails.name}}
+              </h5>
+              <p>Date: {{eventDetails.date}}</p>
+              <p>
+                Description: {{eventDetails.description}}
+              </p>
+              <p>Category: {{eventDetails.category}}</p>
+              <p>Place: {{eventDetails.place}}</p>
+              <p>Capacity: {{eventDetails.capacity}}</p>
+              <p>Assistance: {{eventDetails.assistance}}</p>
+              <p>Price: $ {{eventDetails.price}} USD</p>
+            </section>
+          </div>
+        </template>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div id="cardsDetails" class="card-details-html d-flex flex-wrap justify-content-center mt-3"></div>
-  </main>
-  <footer class="d-flex align-items-center justify-content-between mt-3">
-    <div>
-      <a href="#" class="redes"><img class="col-2" src="../images/facebook.png" alt="facebook" /></a>
-      <a href="#" class="redes"><img class="col-2" src="../images/instagram.png" alt="instagram" /></a>
-      <a href="#" class="redes"><img class="col-2" src="../images/whatsapp.png" alt="facebook" /></a>
-    </div>
-    <p class="fw-medium m-0 me-3">COHORT</p>
-  </footer>
+    </main>
+    <footer class="d-flex align-items-center justify-content-between mt-3">
+      <div>
+        <a href="#" class="redes"><img class="col-2" src="../images/facebook.png" alt="facebook" /></a>
+        <a href="#" class="redes"><img class="col-2" src="../images/instagram.png" alt="instagram" /></a>
+        <a href="#" class="redes"><img class="col-2" src="../images/whatsapp.png" alt="facebook" /></a>
+      </div>
+      <p class="fw-medium m-0 me-3">COHORT</p>
+    </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="../scripts/details.js"></script>
 </body>
 

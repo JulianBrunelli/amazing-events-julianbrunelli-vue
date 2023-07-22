@@ -12,117 +12,134 @@
 </head>
 
 <body>
-  <header class="d-flex align-items-center justify-content-between me-5">
-    <img class="mt-1 ms-4" src="../images/amazing_brand.png" alt="logo-amazing-events" />
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav gap-2">
-            <a class="nav-link container-nav" aria-current="page" href="../index.html">HOME</a>
-            <a class="nav-link container-nav text-wrap text-center" href="./upcomingevents.html">UPCOMING
-              <br />EVENTS</a>
-            <a class="nav-link container-nav text-wrap text-center" href="./pastevents.html">PAST <br />EVENTS</a>
-            <a class="nav-link container-nav" href="./contact.html">CONTACT</a>
-            <a class="nav-link container-nav active" href="#">STATS</a>
+  <div id="app">
+    <header class="d-flex align-items-center justify-content-between me-5">
+      <img class="mt-1 ms-4" src="../images/amazing_brand.png" alt="logo-amazing-events" />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-2">
+              <a class="nav-link container-nav" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link container-nav text-wrap text-center" href="./upcomingevents.html">UPCOMING
+                <br />EVENTS</a>
+              <a class="nav-link container-nav text-wrap text-center" href="./pastevents.html">PAST <br />EVENTS</a>
+              <a class="nav-link container-nav" href="./contact.html">CONTACT</a>
+              <a class="nav-link container-nav active" href="#">STATS</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <section class="d-flex flex-column align-items-center mt-2">
+          <div class="d-flex position-relative carousel-inner">
+            <h1 class="fw-bold z-1 position-absolute top-50 start-50 translate-middle">
+              STATS
+            </h1>
+            <div class="carousel-item active">
+              <img src="../images/shots.jpg" class="d-block w-100" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="../images/estrellitas.jpg" class="d-block w-100" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="../images/corazon.jpg" class="d-block w-100" alt="" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </section>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <section class="d-flex flex-column align-items-center mt-2">
-        <div class="d-flex position-relative carousel-inner">
-          <h1 class="fw-bold z-1 position-absolute top-50 start-50 translate-middle">
-            STATS
-          </h1>
-          <div class="carousel-item active">
-            <img src="../images/shots.jpg" class="d-block w-100" alt="" />
-          </div>
-          <div class="carousel-item">
-            <img src="../images/estrellitas.jpg" class="d-block w-100" alt="" />
-          </div>
-          <div class="carousel-item">
-            <img src="../images/corazon.jpg" class="d-block w-100" alt="" />
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
-    </div>
-    <div id="statsContainer" class="w-100 mt-4 d-flex flex-column align-items-center">
-      <table class="col-10">
-        <thead>
-          <tr>
-            <th colspan="3">Events Statistics</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Event with highest % of assistance</td>
-            <td>Event with lowest % of assistance</td>
-            <td>Event with larger capacity</td>
-          </tr>
-          <tr>
-            <td id="tdOne"></td>
-            <td id="tdTwo"></td>
-            <td id="tdThree"></td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="col-10">
-        <thead>
-          <tr>
-            <th colspan="3">Upcoming events statistics by category</th>
-          </tr>
-        </thead>
-        <tbody id="tableTwo">
-          <tr>
-            <td>Categories</td>
-            <td>Revenues</td>
-            <td>Percentage of assistance</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="col-10">
-        <thead>
-          <tr>
-            <th colspan="3">Past events statistics by category</th>
-          </tr>
-        </thead>
-        <tbody id="tableThree">
-          <tr>
-            <td>Categories</td>
-            <td>Revenues</td>
-            <td>Percentage of assistance</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
-  <footer class="d-flex align-items-center justify-content-between mt-3">
-    <div>
-      <a href="#" class="redes"><img class="col-2" src="../images/facebook.png" alt="facebook" /></a>
-      <a href="#" class="redes"><img class="col-2" src="../images/instagram.png" alt="instagram" /></a>
-      <a href="#" class="redes"><img class="col-2" src="../images/whatsapp.png" alt="facebook" /></a>
-    </div>
-    <p class="fw-medium m-0 me-3">COHORT</p>
-  </footer>
+      <div id="statsContainer" class="w-100 mt-4 d-flex flex-column align-items-center">
+        <table class="col-10">
+          <thead>
+            <tr>
+              <th colspan="3">Events Statistics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Event with highest % of assistance</td>
+              <td>Event with lowest % of assistance</td>
+              <td>Event with larger capacity</td>
+            </tr>
+            <tr>
+              <td>{{percentageMajorAssistName}} {{percentageMajorAssist}}%</td>
+              <td>{{percentageMinorAssistName}} {{percentageMinorAssist}}%</td>
+              <td>{{nameMajorCapacity}} {{majorCapacity}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="col-10">
+          <thead>
+            <tr>
+              <th colspan="3">Upcoming events statistics by category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of assistance</td>
+            </tr>
+            <template v-for="event of forCategoryUpComing">
+              <tr>
+                <td>{{event.name}}</td>
+                <td>{{event.revenues}}</td>
+                <td>{{event.estimate}}%</td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <table class="col-10">
+          <thead>
+            <tr>
+              <th colspan="3">Past events statistics by category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of assistance</td>
+            </tr>
+            <template v-for="event of forCategoryPast">
+              <tr>
+                <td>{{event.name}}</td>
+                <td>{{event.revenues}}</td>
+                <td>{{event.assistance}}%</td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="d-flex align-items-center justify-content-between mt-3">
+      <div>
+        <a href="#" class="redes"><img class="col-2" src="../images/facebook.png" alt="facebook" /></a>
+        <a href="#" class="redes"><img class="col-2" src="../images/instagram.png" alt="instagram" /></a>
+        <a href="#" class="redes"><img class="col-2" src="../images/whatsapp.png" alt="facebook" /></a>
+      </div>
+      <p class="fw-medium m-0 me-3">COHORT</p>
+    </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="../scripts/stats.js"></script>
 </body>
 
