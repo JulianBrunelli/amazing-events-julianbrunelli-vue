@@ -148,6 +148,7 @@ td {
 
 td,
 th {
+  width: 10vw;
   padding: 10px;
 }
 
