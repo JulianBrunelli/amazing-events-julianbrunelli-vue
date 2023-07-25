@@ -1,6 +1,3 @@
-
-// id: "",
-// this.id = this.events.filter(event => event._id)
 const { createApp } = Vue;
 
 createApp({

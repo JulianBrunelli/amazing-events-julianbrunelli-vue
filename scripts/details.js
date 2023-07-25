@@ -19,7 +19,6 @@ createApp({
                 this.paramsDetails = new URLSearchParams(this.idDetails)
                 this.idParameters = this.paramsDetails.get('idEvent')
                 this.eventDetails = this.events.find(event => event._id == this.idParameters)
-                console.log(this.eventDetails);
             })
             .catch((error) => console.error(error.message));
     },
